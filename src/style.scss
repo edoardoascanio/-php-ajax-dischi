@@ -6,18 +6,18 @@
 
 .albums-container{
     flex-basis: 100%;
-    overflow: auto;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     align-self: stretch;
     margin-top: 20px;
-    background-color: lightyellow;
+    background-color: $backgroundColor;
+    color: $primaryColor;
 }
 
 .album{
-    width: calc(100% / 3);
-    padding: 14px;
+    width: 100%;
+    padding: 15px;
     text-align: center;
 }
 

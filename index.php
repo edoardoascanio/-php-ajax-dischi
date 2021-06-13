@@ -16,7 +16,7 @@ require "./db/albums.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="dist/style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@ require "./db/albums.php";
             ?>
                 <ul>
                     <li>
-                       <div class="album"> <?php echo "<td><img src = \"" . $albums["poster"] . "\" </td>" ?></div>
+                       <div id="poster" class="album"> <?php echo "<td><img src = \"" . $albums["poster"] . "\" </td>" ?></div>
                         <strong><?php echo $albums["title"] ?></strong>
                         <p><?php echo $albums["author"] ?></p>
                         <p><?php echo $albums["genre"] ?></p>
