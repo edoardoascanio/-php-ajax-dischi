@@ -15,29 +15,33 @@ require "./db/albums.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 
 <body>
     <div class="container">
 
-        <?php
+        <div class="albums-container">
+            <?php
 
-        foreach ($albumsList as $albums) {
+            foreach ($albumsList as $albums) {
 
-        ?>
-            <ul>
-                <li>
-                    <?php echo "<td><img src = \"" . $albums["poster"] . "\" </td>" ?> <br>
-                    <strong><?php echo $albums["title"] ?></strong>
-                    <p><?php echo $albums["author"] ?></p>
-                    <p><?php echo $albums["genre"] ?></p>
-                    <p><?php echo $albums["year"] ?></p>
-                </li>
-            </ul>
+            ?>
+                <ul>
+                    <li>
+                       <div class="album"> <?php echo "<td><img src = \"" . $albums["poster"] . "\" </td>" ?></div>
+                        <strong><?php echo $albums["title"] ?></strong>
+                        <p><?php echo $albums["author"] ?></p>
+                        <p><?php echo $albums["genre"] ?></p>
+                        <p><?php echo $albums["year"] ?></p>
+                    </li>
+                </ul>
 
-        <?php
-        }
-        ?>
+            <?php
+            }
+            ?>
+        </div>
 
     </div>
 </body>

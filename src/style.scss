@@ -1,0 +1,30 @@
+@import "/partials/variables.scss";
+@import "/partials/common.scss";
+@import "/partials/mixins.scss";
+
+
+
+.albums-container{
+    flex-basis: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-self: stretch;
+    margin-top: 20px;
+    background-color: lightyellow;
+}
+
+.album{
+    width: calc(100% / 3);
+    padding: 14px;
+    text-align: center;
+}
+
+.album img{
+    max-height: 180px;
+    max-width: 180px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
