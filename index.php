@@ -4,6 +4,7 @@ include_once "./partials/template/header.php";
 
 require "./db/albums.php";
 
+
 ?>
 
 <!DOCTYPE html>
@@ -16,30 +17,29 @@ require "./db/albums.php";
     <title>Document</title>
 </head>
 
-
 <body>
+    <div class="container">
 
-    <?php
+        <?php
 
-    foreach ($albumsList as $albums) {
+        foreach ($albumsList as $albums) {
 
-    ?>
+        ?>
+            <ul>
+                <li>
+                    <?php echo "<td><img src = \"" . $albums["poster"] . "\" </td>" ?> <br>
+                    <strong><?php echo $albums["title"] ?></strong>
+                    <p><?php echo $albums["author"] ?></p>
+                    <p><?php echo $albums["genre"] ?></p>
+                    <p><?php echo $albums["year"] ?></p>
+                </li>
+            </ul>
 
+        <?php
+        }
+        ?>
 
-        <ul>
-            <li>
-                <?php echo $albums["poster"]. "<br>" ?>
-                <strong><?php echo $albums["title"] ?></strong>
-                <p><?php echo $albums["author"] ?></p> 
-                <p><?php echo $albums["genre"] ?></p>
-                <p><?php echo $albums["year"] ?></p>
-            </li>
-        </ul>
-
-
-    <?php
-    }
-    ?>
+    </div>
 </body>
 
 </html>
