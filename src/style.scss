@@ -9,7 +9,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    align-self: stretch;
     background-color: $backgroundColor;
     color: $primaryColor;
 }
@@ -23,7 +22,6 @@
 .album img{
     max-height: $size * 40;
     max-width: $size * 40;
-    width: 100%;
     object-fit: cover;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 $size * 2 rgba(0, 0, 0, 0.9);
 }

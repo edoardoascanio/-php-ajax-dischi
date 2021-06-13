@@ -31,7 +31,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  align-self: stretch;
   background-color: slategrey;
   color: black;
 }
@@ -45,8 +44,7 @@ p {
 .album img {
   max-height: 200px;
   max-width: 200px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
